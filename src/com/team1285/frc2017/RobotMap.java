@@ -20,12 +20,12 @@ public class RobotMap {
 	//************************** GEARTOOL ENCODERS *****************************
 	//**************************************************************************
 	
-	public static final int GEARTOOL_OPTICS									= 1;
+	public static final int GEARTOOL_OPTICS					= 1;
 	
 	//**************************************************************************
-	//*************************** GearTool Pneumatics ***********************************
+	//*************************** GearTool Pneumatics **************************
 	//**************************************************************************
 	 
-	public static final int SOLENOID_A				                     	= 1;
-	public static final int SOLENOID_B				                       	= 2;
+	public static final int SOLENOID_A				         = 1;
+	public static final int SOLENOID_B				         = 2;
 }
