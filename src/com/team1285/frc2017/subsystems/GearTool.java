@@ -4,12 +4,11 @@ import com.team1285.frc2017.RobotMap;
 import com.team1285.frc2017.commands.Intake;
 import com.team1285.frc2017.NumberConstants;
 import com.team1285.frc2017.utilities.PIDController;
-import com.ctre.CANTalon;
-//import edu.wpi.first.wpilibj.CANSpeedController;
-import com.ctre.CANTalon.FeedbackDevice;
-import com.ctre.CANTalon.FeedbackDeviceStatus;
+
+import edu.wpi.first.wpilibj.CANTalon;
+import edu.wpi.first.wpilibj.CANTalon.FeedbackDevice;
+import edu.wpi.first.wpilibj.CANTalon.FeedbackDeviceStatus;
 import edu.wpi.first.wpilibj.DigitalInput;
-//import com.ctre.CANTalon.TalonControlMode;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -126,13 +125,8 @@ public class GearTool extends Subsystem {
 	}
 	
 	/**
-	 * @return Retains the state of the clamp
+	 * @return Retains the state of the holder
 	 */
-	
-	public void setContains(boolean state) {
-		this.contains = state;
-	}
-
 	public boolean getContains() {
 		return contains;
 	}

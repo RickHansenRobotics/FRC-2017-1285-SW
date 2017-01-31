@@ -34,26 +34,26 @@ public class Pivot extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.geartool.rotateArm(angle, speed, timeout);
+    	Robot.gearTool.rotateArm(angle, speed, timeout);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return Robot.geartool.isArmPIDDone() || isTimedOut();
+        return Robot.gearTool.isArmPIDDone() || isTimedOut();
     }
     
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.geartool.armPreset(0);
-    	Robot.geartool.armPID.resetPID();
+    	Robot.gearTool.armPreset(0);
+    	Robot.gearTool.armPID.resetPID();
     	
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	Robot.geartool.armPreset(0);
-    	Robot.geartool.armPID.resetPID();
+    	Robot.gearTool.armPreset(0);
+    	Robot.gearTool.armPID.resetPID();
     }
 }
 

@@ -19,7 +19,7 @@ public class GearClamp extends Command {
 	private boolean clamp;
 
 	public GearClamp(boolean clamp) {
-		clamp = Robot.geartool.getOptic();
+		clamp = Robot.gearTool.getOptic();
 	}
 	/*
 	public GearState(boolean gearState){
@@ -27,7 +27,7 @@ public class GearClamp extends Command {
 	}
 	*/
 	public GearClamp() {
-		this(!Robot.geartool.getGearState());
+		this(!Robot.gearTool.getGearState());
 	}
 
 	// Called just before this Command runs the first time
@@ -37,9 +37,9 @@ public class GearClamp extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	protected void execute() {
 		if (clamp)  {
-			Robot.geartool.closeClamp();
+			Robot.gearTool.closeClamp();
 		} else {
-			Robot.geartool.openClamp();
+			Robot.gearTool.openClamp();
 		}
 	}
 

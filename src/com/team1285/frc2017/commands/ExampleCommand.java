@@ -1,9 +1,9 @@
 
 package com.team1285.frc2017.commands;
 
-import edu.wpi.first.wpilibj.command.Command;
-
 import com.team1285.frc2017.Robot;
+
+import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *

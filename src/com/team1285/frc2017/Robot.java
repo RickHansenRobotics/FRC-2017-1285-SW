@@ -6,7 +6,8 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import com.team1285.frc2017.commands.ExampleCommand;
-import com.team1285.frc2017.subsystems.ExampleSubsystem;
+import com.team1285.frc2017.subsystems.*;
+
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -20,6 +21,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final GearTool gearTool = new GearTool();
+	public static final Climber climber = new Climber();
 	public static OI oi;
 
     Command autonomousCommand;

@@ -1,8 +1,8 @@
 package com.team1285.frc2017.subsystems;
 
-import com.ctre.CANTalon;
 import com.team1285.frc2017.RobotMap;
 
+import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.can.CANJNI;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
