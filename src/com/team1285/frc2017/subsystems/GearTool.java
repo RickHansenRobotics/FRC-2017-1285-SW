@@ -126,8 +126,13 @@ public class GearTool extends Subsystem {
 	}
 	
 	/**
-	 * @return Retains the state of the holder
+	 * @return Retains the state of the clamp
 	 */
+	
+	public void setContains(boolean state) {
+		this.contains = state;
+	}
+
 	public boolean getContains() {
 		return contains;
 	}
