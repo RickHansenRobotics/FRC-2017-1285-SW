@@ -1,7 +1,7 @@
-package com.team1285.frc2017.robot.subsystems;
+package com.team1285.frc2017.subsystems;
 
-import com.team1285.frc2017.robot.RobotMap;
-import com.team1285.frc2017.robot.commands.Compress;
+import com.team1285.frc2017.RobotMap;
+import com.team1285.frc2017.commands.Compress;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Relay;

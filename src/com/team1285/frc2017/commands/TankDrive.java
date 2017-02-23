@@ -1,8 +1,8 @@
-package com.team1285.frc2017.robot.commands;
+package com.team1285.frc2017.commands;
 
-import com.team1285.frc2017.robot.NumberConstants;
-import com.team1285.frc2017.robot.Robot;
-import com.team1285.frc2017.robot.commands.auto.DriveDistance;
+import com.team1285.frc2017.NumberConstants;
+import com.team1285.frc2017.Robot;
+import com.team1285.frc2017.commands.auto.DriveDistance;
 
 import edu.wpi.first.wpilibj.command.Command;
 

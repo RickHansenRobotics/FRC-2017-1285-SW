@@ -1,5 +1,4 @@
 package com.team1285.frc2017;
-
 /**
  *	These mappings are for the Logitech F310
  */

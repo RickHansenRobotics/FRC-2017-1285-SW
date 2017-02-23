@@ -1,6 +1,8 @@
 package com.team1285.frc2017;
+import com.team1285.frc2017.commands.auto.DriveDistance;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -14,6 +16,8 @@ public class OI {
     
     Joystick drivePad;
     Joystick toolPad;
+    
+    JoystickButton bButton;
     /**
      * Initializes the joystick objects 
      */
@@ -21,6 +25,8 @@ public class OI {
     {
         drivePad = new Joystick (GamepadConstants.DRIVE_USB_PORT);
         toolPad = new Joystick (GamepadConstants.TOOL_USB_PORT);
+        
+        bButton = new JoystickButton (drivePad, GamepadConstants.B_BUTTON);
     }
     
     /**
@@ -314,5 +320,8 @@ public class OI {
     {
         return toolPad.getRawButton(GamepadConstants.RIGHT_ANALOG_BUTTON);
     }
+    
+    public void driveDistance () {
+    	//bButton.whenPressed(new DriveDistance(50,5,0.5,0));
+    }
 }
-

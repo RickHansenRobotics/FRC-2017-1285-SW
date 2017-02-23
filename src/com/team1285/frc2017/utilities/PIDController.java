@@ -1,6 +1,6 @@
 package com.team1285.frc2017.utilities;
 
-import com.team1285.frc2017.robot.NumberConstants;
+import com.team1285.frc2017.NumberConstants;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 

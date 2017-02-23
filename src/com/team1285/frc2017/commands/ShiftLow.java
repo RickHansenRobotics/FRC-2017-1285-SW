@@ -1,6 +1,6 @@
-package com.team1285.frc2017.robot.commands;
+package com.team1285.frc2017.commands;
 
-import com.team1285.frc2017.robot.Robot;
+import com.team1285.frc2017.Robot;
 import com.team1285.frc2017.utilities.WaitCommand;
 
 import edu.wpi.first.wpilibj.command.Command;

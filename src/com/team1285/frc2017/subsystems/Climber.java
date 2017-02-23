@@ -1,8 +1,8 @@
-package com.team1285.frc2017.robot.subsystems;
+package com.team1285.frc2017.subsystems;
 
 import com.ctre.CANTalon;
-import com.team1285.frc2017.robot.RobotMap;
-import com.team1285.frc2017.robot.commands.ClimbCommand;
+import com.team1285.frc2017.RobotMap;
+import com.team1285.frc2017.commands.ClimbCommand;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 

@@ -1,4 +1,4 @@
-package com.team1285.frc2017.robot.commands;
+package com.team1285.frc2017.commands;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.command.Command;

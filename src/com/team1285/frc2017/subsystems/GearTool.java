@@ -1,11 +1,11 @@
-package com.team1285.frc2017.robot.subsystems;
+package com.team1285.frc2017.subsystems;
 
 import com.ctre.CANTalon;
 import com.ctre.CANTalon.FeedbackDevice;
 import com.ctre.CANTalon.FeedbackDeviceStatus;
-import com.team1285.frc2017.robot.NumberConstants;
-import com.team1285.frc2017.robot.RobotMap;
-import com.team1285.frc2017.robot.commands.Intake;
+import com.team1285.frc2017.NumberConstants;
+import com.team1285.frc2017.RobotMap;
+import com.team1285.frc2017.commands.Intake;
 import com.team1285.frc2017.utilities.PIDController;
 
 import edu.wpi.first.wpilibj.DigitalInput;

@@ -1,7 +1,7 @@
-package com.team1285.frc2017.robot.commands;
+package com.team1285.frc2017.commands;
 
-import com.team1285.frc2017.robot.NumberConstants;
-import com.team1285.frc2017.robot.Robot;
+import com.team1285.frc2017.NumberConstants;
+import com.team1285.frc2017.Robot;
 
 /**
  * Intake Command

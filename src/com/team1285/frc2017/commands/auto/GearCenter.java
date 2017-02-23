@@ -1,23 +1,20 @@
-package com.team1285.frc2017.robot.commands.auto;
+package com.team1285.frc2017.commands.auto;
 
-import com.team1285.frc2017.robot.commands.GearClamp;
+import com.team1285.frc2017.commands.GearClamp;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
  *
  */
-public class GearCenterBaseline extends CommandGroup {
+public class GearCenter extends CommandGroup {
 
-    public GearCenterBaseline() {
-    	
-    	addSequential(new DriveDistance(83.5, 0.8, 0, 2.5));
+    public GearCenter() {
+    	addSequential(new DriveDistance(83, 0.8, 0, 3)); //DSAT
     	addSequential (new GearClamp ());
-    	addSequential (new DriveDistance(-11, 0.8, 0, 2));
-    	addSequential (new DriveTurn (20,-20,0.8,0,2));
-    	addSequential (new DriveDistance (50,1,0,2));
-    	addSequential (new DriveTurn (20,20,0.8,0,2));
-    	addSequential (new DriveDistance (30,1,0,2));
+    	addSequential(new DriveDistance(-11, 0.8, 0, 3));
+    	
+    	//addSequential new 
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

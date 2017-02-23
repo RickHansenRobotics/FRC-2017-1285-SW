@@ -1,56 +1,54 @@
-package com.team1285.frc2017.robot.commands.auto;
+package com.team1285.frc2017.commands;
 
-import com.team1285.frc2017.robot.Robot;
+import com.team1285.frc2017.Robot;
+import com.team1285.frc2017.utilities.WaitCommand;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *@author Neil Balaskandarajah
  */
-public class DriveBlast extends Command {
 
-   public double d;
-   public double t;
+public class ShiftHigh extends Command {
 
-	public DriveBlast(double d, double t) {
-        // Use requires() here to declare subsystem dependencies
+	private boolean state; 
+	private WaitCommand shiftWait;
+
+    public ShiftHigh(boolean state) {
+    	// Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	requires(Robot.drive);
-    	this.d = d;
-    	this.t = t;
+    	
+    	shiftWait = new WaitCommand(0.1);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.drive.resetEncoders();
-    	setTimeout(t);
     }
+    
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if (d < Robot.drive.getAverageDistance()) {
-    	Robot.drive.runLeftDrive(-1);
-    	Robot.drive.runRightDrive(1);
+    	if(state){
+    	Robot.drive.CoastDrive();
+    	shiftWait.start();
+		Robot.drive.shiftHigh();// shift into low gear
+		shiftWait.start();
     	}
-//    	if (d > Robot.drive.getAverageDistance()) {
-//    	Robot.drive.LockDrive();
-//    	}
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return true; // only needs to loop once, returns true
     }
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.drive.LockDrive();
+    	//do nothing when returning true to return to TankDrive
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	Robot.drive.LockDrive();
-    	//Robot.geartool.intake(1);
     }
 }
